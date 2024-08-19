@@ -1,0 +1,10 @@
+*.class
+*.jar
+*.war
+/out/
+/.idea/
+/.gradle/
+/.mvn/
+/target/
+/build/
+
