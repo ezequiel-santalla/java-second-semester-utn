@@ -10,6 +10,9 @@ public class EmployeePerHour extends Employee {
         this.hourlyRate = hourlyRate;
     }
 
+    public EmployeePerHour() {
+    }
+
     @Override
     public String toString() {
         return "EmployeePerHour{" +
