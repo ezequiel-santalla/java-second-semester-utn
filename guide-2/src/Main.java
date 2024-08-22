@@ -3,7 +3,13 @@ import model.book.Book;
 import model.employee.EmployeeContractor;
 import model.employee.EmployeeFullTime;
 import model.employee.EmployeePerHour;
+import model.sale.Bill;
+import model.sale.Client;
 import service.bookService.BookService;
+import service.saleService.BillService;
+
+import java.time.LocalDateTime;
+import java.util.UUID;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +24,7 @@ public class Main {
         System.out.println(empContractor); */
 
         // Exercise 2
-        Author author = new Author("Joshua", "Blanch", "joshua@gmail.com", 'M');
+        /* Author author = new Author("Joshua", "Blanch", "joshua@gmail.com", 'M');
         System.out.println(author);
         System.out.println();
 
@@ -35,6 +41,18 @@ public class Main {
         System.out.println();
 
         BookService bookService = new BookService();
-        bookService.printMessage(book);
+        bookService.printMessage(book); */
+
+        // Exercise 3
+        Client client1 = new Client(UUID.randomUUID(), "Ezequiel", "@ezequiel@gmail.com", 25F);
+        System.out.println(client1);
+        System.out.println();
+
+        Bill bill1 = new Bill(UUID.randomUUID(), 15000F, LocalDateTime.now(), client1);
+        System.out.println(bill1);
+        System.out.println("Total Amount: $" + bill1.getTotalAmount());
+
+        BillService billService1 = new BillService();
+        System.out.println("Net Amount: $" + billService1.calculateNetAmount(bill1));
     }
 }
