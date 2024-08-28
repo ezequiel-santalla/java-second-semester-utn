@@ -1,5 +1,6 @@
 import model.book.Author;
 import model.book.Book;
+import model.circle.Cylinder;
 import model.employee.EmployeeContractor;
 import model.employee.EmployeeFullTime;
 import model.employee.EmployeePerHour;
@@ -24,11 +25,11 @@ public class Main {
         System.out.println(empContractor); */
 
         // Exercise 2
-        /* Author author = new Author("Joshua", "Blanch", "joshua@gmail.com", 'M');
-        System.out.println(author);
+        /* Author author1 = new Author("Joshua", "Blanch", "joshua@gmail.com", 'M');
+        System.out.println(author1);
         System.out.println();
 
-        Book book = new Book("Effective Java", 450F, 150, author);
+        Book book = new Book("Effective Java", 450F, 150, author1);
         System.out.println(book);
         System.out.println();
 
@@ -44,7 +45,7 @@ public class Main {
         bookService.printMessage(book); */
 
         // Exercise 3
-        Client client1 = new Client(UUID.randomUUID(), "Ezequiel", "@ezequiel@gmail.com", 25F);
+        /* Client client1 = new Client(UUID.randomUUID(), "Ezequiel", "@ezequiel@gmail.com", 25F);
         System.out.println(client1);
         System.out.println();
 
@@ -53,6 +54,12 @@ public class Main {
         System.out.println("Total Amount: $" + bill1.getTotalAmount());
 
         BillService billService1 = new BillService();
-        System.out.println("Net Amount: $" + billService1.calculateNetAmount(bill1));
+        System.out.println("Net Amount: $" + billService1.calculateNetAmount(bill1)); */
+
+        // Exercise 4
+        Cylinder cylinder1 = new Cylinder();
+        System.out.println(cylinder1);
+        Cylinder cylinder2 = new Cylinder(2F, "blue", 2F);
+        System.out.println(cylinder2);
     }
 }
