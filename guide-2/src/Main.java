@@ -1,6 +1,7 @@
 import model.book.Author;
 import model.book.Book;
 import model.circle.Cylinder;
+import model.employee.Employee;
 import model.employee.EmployeeContractor;
 import model.employee.EmployeeFullTime;
 import model.employee.EmployeePerHour;
@@ -61,13 +62,13 @@ public class Main {
         System.out.println("Net Amount: $" + billService1.calculateNetAmount(bill1)); */
 
         // Exercise 4
-        /* Cylinder cylinder1 = new Cylinder();
+        Cylinder cylinder1 = new Cylinder();
         System.out.println(cylinder1);
         Cylinder cylinder2 = new Cylinder(2F, "blue", 2F);
-        System.out.println(cylinder2); */
+        System.out.println(cylinder2);
 
         // Exercise 5
-        Student student1 = new Student("42044093", "Ezequiel", "Santalla", "ezequiel@gmail.com", "Dorrego 2400", LocalDate.of(1999, 8, 13), 58000.0, "TUP");
+        /* Student student1 = new Student("42044093", "Ezequiel", "Santalla", "ezequiel@gmail.com", "Dorrego 2400", LocalDate.of(1999, 8, 13), 58000.0, "TUP");
         Student student2 = new Student("43890671", "Jesus", "Arias", "jesus@gmail.com", "Almafuerte 4500", LocalDate.of(1995, 3, 12), 58000.0, "TUP");
         Student student3 = new Student("34986111", "Jorge", "Benitez", "jorge@gmail.com", "Buenos Aires 850", LocalDate.of(1990, 1, 5), 58000.0, "TUP");
         Student student4 = new Student("46092874", "Fausto", "Gutierrez", "fausto@gmail.com", "Cardiel 470", LocalDate.of(2001, 10, 28), 58000.0, "TUP");
@@ -121,6 +122,6 @@ public class Main {
             }
         }
 
-        System.out.println("Total fee: " + fee);
+        System.out.println("Total fee: " + fee); */
     }
 }
