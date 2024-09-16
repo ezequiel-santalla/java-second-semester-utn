@@ -1,6 +1,6 @@
 import model.Book;
 import model.Author;
-import service.BookService;
+import service.BookServiceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class Main {
         Book book9 = new Book(UUID.randomUUID(), "The Two Towers", author3, 24.99, 1954);
         Book book10 = new Book(UUID.randomUUID(), "The Return of the King", author3, 29.99, 1955);
 
-        BookService bookService = new BookService();
+        BookServiceImpl bookService = new BookServiceImpl();
 
         bookService.addBookToList(book1, bookList);
         bookService.addBookToList(book2, bookList);

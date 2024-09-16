@@ -64,9 +64,13 @@ public class Book implements Comparable<Book> {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Book book = (Book) o;
+        if (!(o instanceof Book book)) return false;
         return Objects.equals(id, book.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
     }
 
     @Override
@@ -79,6 +83,7 @@ public class Book implements Comparable<Book> {
                 ", yearOfPublication=" + yearOfPublication +
                 '}';
     }
+
 
     @Override
     public int compareTo(Book o) {
