@@ -13,8 +13,8 @@ public class Book implements Comparable<Book> {
     public Book() {
     }
 
-    public Book(UUID id, String title, Author author, Double price, Integer yearOfPublication) {
-        this.id = id;
+    public Book(String title, Author author, Double price, Integer yearOfPublication) {
+        this.id = UUID.randomUUID();
         this.title = title;
         this.author = author;
         this.price = price;
@@ -83,7 +83,6 @@ public class Book implements Comparable<Book> {
                 ", yearOfPublication=" + yearOfPublication +
                 '}';
     }
-
 
     @Override
     public int compareTo(Book o) {
