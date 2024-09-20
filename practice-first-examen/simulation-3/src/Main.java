@@ -64,6 +64,6 @@ public class Main {
         System.out.println();
         System.out.println("Productos filtrados por marca");
         System.out.println();
-        productoService.filtrarPorMarca(Marca.APPLE, listaProductos);
+        productoService.filtrarCelularPorMarca(Marca.APPLE, listaProductos);
     }
 }

@@ -18,10 +18,10 @@ public class ProductoService {
         }
     }
 
-    // Filtrar por marca
-    public void filtrarPorMarca(Marca m, List<Producto> lista) {
+    // Filtrar celular por marca
+    public void filtrarCelularPorMarca(Marca m, List<Producto> lista) {
         for (Producto p : lista) {
-            if (p.getMarca().equals(m)) {
+            if (p.getCategoria().equals(Categoria.CELULAR) && p.getMarca().equals(m)) {
                 System.out.println(p);
             }
         }
