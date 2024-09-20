@@ -53,11 +53,11 @@ public class Main {
 
         System.out.println("Productos ordenados por precio");
         System.out.println();
-        productoService.ordenarPorPrecio(listaProductos);
+        productoService.mostrarListaOrdenada(listaProductos);
         System.out.println();
 
         productoService.eliminarProducto(comp2, Usuario.ADMINISTRADOR, listaProductos);
-        System.out.println("Productos eliminados");
+        System.out.println("Productos sin el eliminado");
         System.out.println();
         productoService.mostrarProductos(listaProductos);
 

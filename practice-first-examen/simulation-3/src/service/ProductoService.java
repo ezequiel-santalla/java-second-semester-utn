@@ -37,10 +37,15 @@ public class ProductoService {
     }
 
     // Ordenar por precio
-    public void ordenarPorPrecio(List<Producto> lista) {
+    private void ordenarPorPrecio(List<Producto> lista) {
         lista.sort(Producto::compareTo);
+    }
 
-        for (Producto p : lista) {
+    // Mostrar Lista Ordenada
+    public void mostrarListaOrdenada(List<Producto> listaOrdenada) {
+        ordenarPorPrecio(listaOrdenada);
+
+        for (Producto p : listaOrdenada) {
             System.out.println(p);
         }
     }
